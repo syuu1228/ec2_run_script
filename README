@@ -1,0 +1,9 @@
+Configuration:
+  Need to configure sshkey, keyname, secgroup_id, subnet_id, SSH_USER, AMI_NAME, AMI_OWNER on ec2_run_script.sh.
+  Also edit remote_script.sh if needed.
+
+Usage:
+  ./ec2_run_multiple.sh <instance types>
+
+For example, to measure i7ie.* instances:
+  ./ec2_run_multiple.sh i7ie.large i7ie.xlarge i7ie.2xlarge i7ie.3xlarge i7ie.6xlarge i7ie.12xlarge i7ie.18xlarge i7ie.24xlarge i7ie.48xlarge
