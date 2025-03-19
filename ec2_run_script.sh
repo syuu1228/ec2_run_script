@@ -20,7 +20,7 @@ keyname=KEYNAME
 secgroup_id=SECGROUP
 subnet_id=SUBNETID
 
-REMOTE_SCRIPT=remote_script.sh
+REMOTE_SCRIPT=remote_script.py
 
 image_id=$(aws ec2 describe-images --region $REGION \
                 --filters "Name=name,Values=$AMI_NAME" "Name=architecture,Values=$ARCH" \
